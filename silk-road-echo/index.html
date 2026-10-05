@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>丝路上的回响 · Echo on the Silk Road</title>
+<meta name="description" content="丝路上的回响 Echo on the Silk Road — 跨越山海，以丝为媒，听见文明的双向回响。海陆双线丝绸之路中英双语交互式数字网页。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,6..60,300..700;1,6..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="pattern-overlay" aria-hidden="true"></div>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="site-header" id="siteHeader">
+  <button class="brand" type="button" data-goto="0">
+    <span class="brand-mark">丝</span>
+    <span class="brand-text">
+      <em>丝路上的回响</em>
+      <small>Echo on the Silk Road</small>
+    </span>
+  </button>
+  <nav class="site-nav" id="siteNav">
+    <button type="button" data-goto="1" data-i18n="navOrigin">溯源</button>
+    <button type="button" data-goto="2" data-i18n="navJourney">重走丝路</button>
+    <button type="button" data-goto="3" data-i18n="navHeritage">丝韵新生</button>
+    <button type="button" data-goto="3" data-anchor="#resonance" data-i18n="navResonance">文明回响</button>
+  </nav>
+  <div class="lang-toggle" id="langToggle" role="group" aria-label="Language / 语言">
+    <button type="button" data-lang="zh" class="active">中</button>
+    <button type="button" data-lang="en">EN</button>
+  </div>
+</header>
+
+<!-- ============ 页面容器 ============ -->
+<div class="deck" id="deck">
+
+  <!-- ===== 第 1 页 · 封面 ===== -->
+  <section class="page page-hero active" data-page="0" id="page-hero">
+    <div class="hero-art" aria-hidden="true">
+      <svg class="hero-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#EFE6D5"/>
+            <stop offset="40%" stop-color="#E9DCC6"/>
+            <stop offset="56%" stop-color="#DEE4DC"/>
+            <stop offset="100%" stop-color="#C8D8D4"/>
+          </linearGradient>
+          <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#E7C77A" stop-opacity="0.9"/>
+            <stop offset="55%" stop-color="#E7C77A" stop-opacity="0.22"/>
+            <stop offset="100%" stop-color="#E7C77A" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="duneFar" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#DDCBA9"/><stop offset="100%" stop-color="#E6D8BC"/>
+          </linearGradient>
+          <linearGradient id="duneMid" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#CFB68D"/><stop offset="100%" stop-color="#DDCBA9"/>
+          </linearGradient>
+          <linearGradient id="duneNear" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#BB9E70"/><stop offset="100%" stop-color="#CBB083"/>
+          </linearGradient>
+          <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#C2D3CF"/><stop offset="100%" stop-color="#9CB6B2"/>
+          </linearGradient>
+          <linearGradient id="veil" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#F7F2E9" stop-opacity="0.72"/>
+            <stop offset="55%" stop-color="#F7F2E9" stop-opacity="0.08"/>
+            <stop offset="100%" stop-color="#F7F2E9" stop-opacity="0.5"/>
+          </linearGradient>
+
+          <g id="camel" fill="#8A6A42">
+            <rect x="20" y="46" width="4" height="26" rx="2"/>
+            <rect x="32" y="48" width="4" height="24" rx="2"/>
+            <rect x="50" y="46" width="4" height="26" rx="2"/>
+            <rect x="58" y="48" width="4" height="24" rx="2"/>
+            <ellipse cx="40" cy="40" rx="27" ry="12"/>
+            <path d="M21 37 C27 12 53 12 59 37 Z"/>
+            <path d="M60 36 C62 20 68 14 74 12" fill="none" stroke="#8A6A42" stroke-width="6" stroke-linecap="round"/>
+            <ellipse cx="77" cy="11" rx="7" ry="5" transform="rotate(-18 77 11)"/>
+          </g>
+          <g id="ship" fill="#6E8A88">
+            <path d="M0 18 L64 18 L54 38 L10 38 Z"/>
+            <rect x="30" y="-8" width="3" height="28" rx="1.5"/>
+            <path d="M31 -8 L31 14 L12 14 Z"/>
+            <path d="M35 -3 L35 16 L52 16 Z" opacity="0.85"/>
+          </g>
+        </defs>
+
+        <rect width="1440" height="900" fill="url(#skyGrad)"/>
+        <circle cx="1090" cy="232" r="210" fill="url(#sunGlow)"/>
+        <circle cx="1090" cy="232" r="72" fill="#E3BE63" opacity="0.8"/>
+
+        <path d="M0,472 C160,420 300,470 460,440 C620,410 760,456 920,430 C1080,404 1260,446 1440,420 L1440,600 L0,600 Z" fill="url(#duneFar)"/>
+        <path d="M0,522 C180,470 340,522 520,490 C700,458 860,512 1040,486 C1220,460 1340,496 1440,478 L1440,600 L0,600 Z" fill="url(#duneMid)" opacity="0.92"/>
+        <path d="M0,558 C200,520 360,562 560,536 C760,510 900,554 1100,532 C1280,514 1380,542 1440,528 L1440,632 L0,632 Z" fill="url(#duneNear)"/>
+
+        <g class="caravan">
+          <use href="#camel" transform="translate(392,498) scale(0.55)" opacity="0.9"/>
+          <use href="#camel" transform="translate(444,500) scale(0.48)" opacity="0.72"/>
+          <use href="#camel" transform="translate(488,504) scale(0.42)" opacity="0.55"/>
+          <use href="#camel" transform="translate(524,508) scale(0.36)" opacity="0.4"/>
+        </g>
+
+        <rect x="0" y="612" width="1440" height="288" fill="url(#seaGrad)"/>
+        <path d="M0,614 C240,600 420,620 660,610 C900,600 1120,622 1440,608 L1440,632 L0,632 Z" fill="#B7CAC6" opacity="0.7"/>
+
+        <g stroke="#F4F0E5" fill="none" stroke-linecap="round">
+          <path d="M-20,668 q34,-15 68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0" stroke-width="3" opacity="0.6"/>
+          <path d="M-20,724 q34,-15 68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0" stroke-width="3" opacity="0.45"/>
+          <path d="M-20,788 q34,-15 68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0" stroke-width="3" opacity="0.32"/>
+          <path d="M-20,852 q34,-15 68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0 t68,0" stroke-width="3" opacity="0.22"/>
+        </g>
+
+        <use href="#ship" transform="translate(250,632) scale(1.1)" opacity="0.85"/>
+        <use href="#ship" transform="translate(880,690) scale(1.5)" opacity="0.7"/>
+        <use href="#ship" transform="translate(1180,646) scale(0.85)" opacity="0.55"/>
+        <use href="#ship" transform="translate(600,780) scale(1.25)" opacity="0.4"/>
+
+        <path d="M70,520 C300,470 520,566 760,470 C980,382 1180,474 1400,428"
+              stroke="#C9A44C" stroke-width="2" fill="none" stroke-dasharray="2 11" opacity="0.55"/>
+
+        <rect width="1440" height="900" fill="url(#veil)"/>
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-i18n="heroEyebrow">古丝绸之路 · 海陆双线</p>
+      <h1 class="hero-title" data-i18n="heroTitle">丝路上的回响</h1>
+      <p class="hero-subtitle" data-i18n="heroSubtitle">跨越山海，以丝为媒，听见文明的双向回响</p>
+      <p class="hero-guide" data-i18n="heroGuide">两千年前，驼铃起于长安，风帆扬于闽港。丝绸携东方风雅西传，异域风物随长风东归。丝绸之路从不是单向的输出，而是一场跨越亚欧非的文明互鉴。滚动探索，或点击开启旅程，重走千年丝路古道。</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" type="button" data-goto="1" data-i18n="btnStart">开启丝路旅程</button>
+      </div>
+    </div>
+
+    <div class="swipe-hint">
+      <span class="hint-arrow">‹</span>
+      <span data-i18n="swipeHint">左右滑动 · 点击箭头切换页面</span>
+      <span class="hint-arrow">›</span>
+    </div>
+  </section>
+
+  <!-- ===== 第 2 页 · 序章·溯源 ===== -->
+  <section class="page" data-page="1">
+    <section class="section origin" id="origin">
+      <div class="section-head reveal">
+        <span class="section-tag" data-i18n="originTag">序章 · 溯源</span>
+        <h2 class="section-title" data-i18n="originTitle">溯源：一条古道，双向风华</h2>
+        <p class="section-desc" data-i18n="originCore">西汉张骞凿空西域，正式开启陆上丝绸之路；唐宋海运繁盛，海上丝路逐步兴盛，形成海陆并行的文明通道。千百年间，丝路不仅是丝绸、瓷器、香料的商贸通道，更是艺术、宗教、科技、民俗的交流纽带。东方纹样西传重塑中亚、西亚审美，异域技艺、文化东融丰富华夏文明肌理，双向奔赴，生生不息。</p>
+      </div>
+
+      <div class="origin-grid">
+        <div class="timeline-wrap reveal">
+          <h3 class="sub-title" data-i18n="timelineTitle">千年脉络</h3>
+          <div class="timeline" id="timeline"></div>
+        </div>
+        <div class="artifacts-wrap reveal">
+          <h3 class="sub-title" data-i18n="artifactTitle">文物见证 · 点击查看</h3>
+          <div class="artifacts" id="artifacts"></div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===== 第 3 页 · 重走丝路 ===== -->
+  <section class="page" data-page="2">
+    <section class="section journey" id="journey">
+      <div class="section-head reveal">
+        <span class="section-tag" data-i18n="journeyTag">核心互动 · 重走丝路</span>
+        <h2 class="section-title" data-i18n="journeyTitle">重走丝路</h2>
+        <p class="section-desc" data-i18n="journeyDesc">你化身古代商旅，沿真实历史站点逐站前行。重走丝绸之路，重走的不只是商道，更是文明互鉴的长河。</p>
+      </div>
+
+      <!-- 陆上丝路主线 -->
+      <div class="map-panel reveal">
+        <div class="map-head">
+          <div>
+            <h3 class="map-title" data-i18n="overlandTitle">陆上丝绸之路 · 主线商旅</h3>
+            <p class="map-sub" data-i18n="overlandSub">长安 → 敦煌 → 吐鲁番（高昌）→ 喀什（疏勒）→ 撒马尔罕 → 德黑兰（古安息）→ 巴格达（古条支）→ 君士坦丁堡</p>
+          </div>
+          <div class="map-meta">
+            <button class="btn btn-start" id="startJourney" type="button" data-i18n="btnStartHere">从长安启程</button>
+            <span class="progress-chip" id="progressText">0 / 8</span>
+          </div>
+        </div>
+
+        <div class="map-scroll">
+          <div class="map-wrap" data-map="overland">
+            <svg class="route-svg" viewBox="0 0 1000 240" preserveAspectRatio="none" aria-hidden="true">
+              <path class="route-base" d="M66,160 C124,120 142,100 190,110 C250,122 270,165 320,150 C380,118 400,88 450,100 C510,115 530,165 580,150 C640,118 660,88 710,105 C770,128 790,170 840,155 C890,122 910,92 950,110"/>
+              <path class="route-progress" id="overlandProgress" d="M66,160 C124,120 142,100 190,110 C250,122 270,165 320,150 C380,118 400,88 450,100 C510,115 530,165 580,150 C640,118 660,88 710,105 C770,128 790,170 840,155 C890,122 910,92 950,110"/>
+            </svg>
+            <div class="map-nodes" id="overlandNodes"></div>
+          </div>
+        </div>
+
+        <div class="baidu-panel" id="baiduPanelOverland" hidden>
+          <div class="baidu-map" id="baiduMapOverland" role="application" aria-label="陆上丝绸之路真实路线地图"></div>
+          <p class="baidu-note" data-i18n="baiduNote">底图 © 百度地图 · 箭头为行进方向，点击站点图标可查看史实科普</p>
+        </div>
+
+        <div class="map-foot">
+          <p class="map-hint" data-i18n="overlandHint">点击闪烁的站点开始行程，已抵达的站点会持续散发微光。</p>
+          <div class="map-tools">
+            <button class="btn btn-mini" id="baiduToggleOverland" type="button" data-baidu="overland" data-i18n="btnMapReal">查看真实路线地图</button>
+            <button class="btn btn-mini" id="resetJourney" type="button" data-i18n="btnReset">重新启程</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 海上丝路支线 -->
+      <div class="map-panel reveal">
+        <div class="map-head">
+          <div>
+            <h3 class="map-title" data-i18n="maritimeTitle">海上丝绸之路 · 支线科普</h3>
+            <p class="map-sub" data-i18n="maritimeSub">泉州 → 占城 → 马六甲 → 锡兰山 → 古里 → 霍尔木兹</p>
+          </div>
+          <div class="map-meta">
+            <button class="btn btn-start" id="startMaritime" type="button" data-i18n="btnStartQuanzhou">从泉州启程</button>
+            <span class="progress-chip muted" id="maritimeText">0 / 6</span>
+          </div>
+        </div>
+
+        <div class="map-scroll">
+          <div class="map-wrap" data-map="maritime">
+            <svg class="route-svg" viewBox="0 0 1000 240" preserveAspectRatio="none" aria-hidden="true">
+              <path class="route-base sea" d="M90,120 C150,80 220,60 280,80 C360,105 400,155 470,140 C540,125 580,70 640,90 C700,110 740,165 790,145 C850,125 880,75 930,100"/>
+              <path class="route-progress" id="maritimeProgress" d="M90,120 C150,80 220,60 280,80 C360,105 400,155 470,140 C540,125 580,70 640,90 C700,110 740,165 790,145 C850,125 880,75 930,100"/>
+            </svg>
+            <div class="map-nodes" id="maritimeNodes"></div>
+          </div>
+        </div>
+
+        <div class="baidu-panel" id="baiduPanelMaritime" hidden>
+          <div class="baidu-map" id="baiduMapMaritime" role="application" aria-label="海上丝绸之路真实路线地图"></div>
+          <p class="baidu-note" data-i18n="baiduNote">底图 © 百度地图 · 箭头为行进方向，点击站点图标可查看史实科普</p>
+        </div>
+
+        <div class="map-foot">
+          <p class="map-hint" data-i18n="maritimeHint">点击任一港口，查看海上丝路的史实科普。</p>
+          <div class="map-tools">
+            <button class="btn btn-mini" id="baiduToggleMaritime" type="button" data-baidu="maritime" data-i18n="btnMapReal">查看真实路线地图</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===== 第 4 页 · 古今对话（含文明回响与页脚） ===== -->
+  <section class="page" data-page="3">
+    <section class="section heritage" id="heritage">
+      <div class="section-head reveal">
+        <span class="section-tag" data-i18n="heritageTag">古今对话 · 丝韵新生</span>
+        <h2 class="section-title" data-i18n="heritageTitle">丝韵新生：从古韵流光到当代风华</h2>
+      </div>
+
+      <div class="heritage-grid">
+        <div class="heritage-col reveal">
+          <h3 class="col-title" data-i18n="heritageLeftTitle">古韵纹样 · 千年流光</h3>
+          <p class="col-text" data-i18n="heritageLeftText">千年前，丝路纹样跨越山海、双向融合。中原卷草纹、宝相花西传滋养中亚艺术，波斯联珠纹、异域几何纹样东融，重塑华夏丝织美学。这些交融而生的纹样，是文明互鉴最细腻的视觉见证。</p>
+          <div class="pattern-cards" id="patternCards"></div>
+          <p class="col-tip" data-i18n="patternTip">点击纹样卡片，查看溯源与传播路径</p>
+        </div>
+
+        <div class="heritage-col reveal">
+          <h3 class="col-title" data-i18n="heritageRightTitle">当代风华 · 活态传承</h3>
+          <p class="col-text" data-i18n="heritageRightText">千年丝路从未落幕。如今，传统丝绸纹样与现代设计、时尚文创、国潮美学结合，走出博物馆、走进大众生活。新时代的丝绸文化，延续着丝路互通共生的精神，成为中外文化交流的全新载体。</p>
+          <div class="modern-cards" id="modernCards"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="resonance" id="resonance">
+      <div class="resonance-art" aria-hidden="true">
+        <svg viewBox="0 0 1440 700" preserveAspectRatio="xMidYMid slice">
+          <path d="M-40,470 C220,410 460,510 720,430 C960,356 1200,452 1480,392"
+                stroke="#C9A44C" stroke-width="2" fill="none" stroke-dasharray="2 12" opacity="0.5"/>
+          <path d="M-40,540 C240,486 480,576 740,500 C980,430 1220,522 1480,466"
+                stroke="#C9A44C" stroke-width="1.5" fill="none" stroke-dasharray="2 12" opacity="0.35"/>
+          <circle cx="720" cy="300" r="250" fill="url(#sunGlow)" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="resonance-content reveal">
+        <span class="section-tag" data-i18n="resonanceTag">尾声 · 文明回响</span>
+        <h2 class="resonance-title" data-i18n="resonanceTitle">文明无界，回响不息</h2>
+        <p class="resonance-text" data-i18n="resonanceText">丝绸之路，从来不是一条简单的地理古道，而是一场跨越千年的文明对话。它没有绝对的东西方界限，没有单一的文化输出，唯有双向的奔赴、包容的接纳、共生的成长。古丝路上，以丝为媒、联通世界；新征程上，以文为桥、共赴山海。千年丝韵生生不息，文明互鉴回响至今。</p>
+        <div class="resonance-tags">
+          <span data-i18n="tagInclusive">包容</span>
+          <span data-i18n="tagMutual">互鉴</span>
+          <span data-i18n="tagSymbiosis">共生</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer" id="footer">
+      <div class="footer-inner">
+        <div class="footer-line" aria-hidden="true"></div>
+        <p class="footer-main" data-i18n="footerTitle">丝路上的回响·Echo on the Silk Road</p>
+        <p class="footer-comp" data-i18n="footerComp">第十四届全国大学生数字媒体科技作品及创意竞赛</p>
+      </div>
+    </footer>
+  </section>
+
+</div>
+
+<!-- ============ 页面指示器与翻页 ============ -->
+<nav class="page-dots" id="pageDots" aria-label="Page navigation"></nav>
+<div class="page-arrows">
+  <button class="arrow-btn" id="prevPage" type="button" aria-label="Previous page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5 L8 12 L15 19"/></svg>
+  </button>
+  <button class="arrow-btn" id="nextPage" type="button" aria-label="Next page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5 L16 12 L9 19"/></svg>
+  </button>
+</div>
+
+<!-- ============ 弹窗 ============ -->
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" type="button" data-close aria-label="Close">
+      <span></span><span></span>
+    </button>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
